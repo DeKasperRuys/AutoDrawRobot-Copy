@@ -1,0 +1,19 @@
+We gaan voor dit project een atmega328P Chip gebruiken en een 16 mhz kristal (zelfgemaakte arduino) om de robot mee aan te sturen.
+Om onze code te uploaden op de atmega328P hebben we een boatloader nodig.
+
+De H-Bridge sn755410 is verbonden met de atmega en zorgt voor de sturing van de motoren van de wielen.
+De powerbank van 7.2 V wordt aangesloten op de h-bridge en de atmega.
+We gebruiken ook externe baterijen in een battery pack voor de dc motor aan te sturen (6 * 1.5v AA baterijen = 9 V).
+Door bepaalde pinnen te switchen tussen high of low krijgen we beweging van onze robot. 
+
+De H-Bridge heeft een input die verbonden is met de atmega, de output is afkomstig van onze android applicatie.
+We gebruiken een HC-05 bluetooth module voor de communicatie tussen de laptop en de app en de robot en de app.
+De bluetooth module wordt aangesloten op de rxd en txd pinnen van de atmega.
+Als alternatief op de bluetooth module kunnen we gebruik maken van esp32 wifi module voor de communicatie gebruiken.
+
+We gebruiken een servomoter om de pen vast te houden en op en neer te laten gaan.
+We gebruiken een 9DOF-stick voor het bepalen van de hoek en het berekenen van de richting van de robot.
+
+We maken gebruik van 4 ultrasone sensors (vooraan,achteraan,links en rechts), 
+deze sensors zullen onze richting bepalen en ervoor zorgen dat de robot niet tegen de randen van de houten kist botst.
+Elke sensor berekent de afstand om op deze manier het midden te vinden.

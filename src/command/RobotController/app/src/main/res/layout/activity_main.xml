@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:id="@+id/layoutPauze"
+
+            >
+            <ImageButton
+                android:id="@+id/btnStart"
+                style="@style/TopButtonOfControlePanel"
+                android:src="@drawable/ic_play_arrow_black_24dp"
+                />
+
+            <ImageButton
+                android:id="@+id/btnCallibrate"
+                style="@style/TopButtonOfControlePanel"
+                android:src="@drawable/ic_location_searching_black_24dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="4"
+            android:padding="10dp"
+            >
+            <ImageButton
+                android:id="@+id/btn45"
+                style="@style/ControlButton"
+                android:src="@drawable/btncirkel"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"/>
+            <ImageButton
+                android:id="@+id/btnUp"
+                style="@style/ControlButton"
+                android:src="@drawable/ic_arrow_upward_black_24dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                />
+            <ImageButton
+                android:id="@+id/btn90"
+                style="@style/ControlButton"
+                android:src="@drawable/btn90"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"/>
+
+            <ImageButton
+                android:id="@+id/btnLeft"
+                style="@style/ControlButton"
+                android:src="@drawable/ic_arrow_back_black_24dp"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageButton
+                android:id="@+id/btnPen"
+                style="@style/ControlButton"
+                android:src="@drawable/ic_brush_black_24dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+            <ImageButton
+                android:id="@+id/btnRight"
+                style="@style/ControlButton"
+                android:src="@drawable/ic_arrow_forward_black_24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+            <ImageButton
+                android:id="@+id/btn180"
+                style="@style/ControlButton"
+                android:src="@drawable/btn135"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"/>
+
+            <ImageButton
+                android:id="@+id/btnDown"
+                style="@style/ControlButton"
+                android:src="@drawable/ic_arrow_downward_black_24dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                />
+
+            <ImageButton
+                android:id="@+id/btn135"
+                style="@style/ControlButton"
+                android:src="@drawable/btncirkel"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/btnUpload"
+                style="@style/ButtonOfConfigPanel"
+                android:src="@drawable/ic_file_upload_black_24dp"
+                />
+            <ImageButton
+                android:id="@+id/btnDraw"
+                style="@style/ButtonOfConfigPanel"
+                android:src="@drawable/ic_brush_black_24dp"
+                />
+            <ImageButton
+                android:id="@+id/btnBluetooth"
+                style="@style/ButtonOfConfigPanel"
+                android:src="@drawable/ic_bluetooth_black_24dp"
+                />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:layout_margin="2dp"
+            android:background="#A9A9A9"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+               style="@style/LogPanelLinearLayout">
+                <TextView
+                    android:id="@+id/txtTest"
+                    style="@style/TextView"
+                    android:text="Ultrasonic1: "
+                    />
+                <TextView
+                   style="@style/TextView"
+                    android:text="@string/ultrasonic1"/>
+            </LinearLayout>
+            <LinearLayout
+                style="@style/LogPanelLinearLayout">
+                <TextView
+                    style="@style/TextView"
+                    android:text="Ultrasonic2: "
+                    />
+                <TextView
+                    style="@style/TextView"
+                    android:text="@string/ultrasonic2"/>
+            </LinearLayout>
+            <LinearLayout
+                style="@style/LogPanelLinearLayout">
+                <TextView
+                    style="@style/TextView"
+                    android:text="Ultrasonic3: "
+                    />
+                <TextView
+                    style="@style/TextView"
+                    android:text="@string/ultrasonic3"/>
+            </LinearLayout>
+            <LinearLayout
+                style="@style/LogPanelLinearLayout">
+                <TextView
+                    style="@style/TextView"
+                    android:text="Ultrasonic4: "
+                    />
+                <TextView
+                    style="@style/TextView"
+                    android:text="@string/ultrasonic4"/>
+            </LinearLayout>
+            <LinearLayout
+                style="@style/LogPanelLinearLayout">
+                <TextView
+                    style="@style/TextView"
+                    android:text="9Dof: "
+                    />
+                <TextView
+                    style="@style/TextView"
+                    android:text="@string/NineDof"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

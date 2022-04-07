@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">RobotController</string>
+    <string name="ultrasonic1"> 121test
+    </string>
+    <string name="ultrasonic2"> 132test
+    </string>
+    <string name="ultrasonic3"> 113test
+    </string>
+    <string name="ultrasonic4"> 134test
+    </string>
+    <string name="NineDof">
+        9Dof
+    </string>
+
+
+</resources>
